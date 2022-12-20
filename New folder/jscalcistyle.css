@@ -1,0 +1,129 @@
+
+/*div section starts*/
+#result{
+    /* border: 5px solid black; */
+    height: 600px;
+    width: 30%;
+    margin-left: 40%;
+    margin-top: 10%;
+    
+}
+         /*div section ends*/
+
+         /* input section starts*/
+#box1{
+    height: 10vh;
+    width: 30%;
+    text-align: center;
+    font-size: 200%;
+    border: 3px solid black;
+    border-radius: 10%;
+    /* background-color: red; */
+}
+
+    
+#box2{
+    height: 10vh;
+    width: 30%;
+    text-align: center;
+    font-size: 200%;
+    border-radius: 10%;
+    border: 3px solid black;
+    
+}
+#box3{
+    height: 7vh;
+    width: 63%;
+    text-align: center;
+    font-size: 200%;
+    border-radius: 0%;
+    /* background-color: red; */
+    color: black;
+    border: 3px solid black;
+    border-radius: 3%;
+}
+
+            /* input section ends*/
+
+/* button css starts*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: gray;    /*  using this number #dedede*/
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style-type:none;
+   
+}
+ul li a{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;                   /*  if not using display:block the change styele and get expansive design*/
+    text-align: center;
+    margin: 0 10px;
+    /* border-radius: 50%; */
+    border-radius: 30%;                  /* this is my line ussed*/
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px red;
+    /* background: linear-gradient(0deg, #ddd, #fff); */
+    background: #000;                         /* this is my line ussed*/
+    transition: 0.5s;                      
+}
+ul li a:hover{
+
+    box-shadow: 0 2px 5px  rgba(0,0,0,0.3);
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+  /*  background-color: yellow;                              this is my line ussed*/
+
+}
+ul li a .fab{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+#icon1{                      /* this is my line ussed*/
+    font-size: 30px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: -50% -50%;
+    background-color: pink;
+    border-radius: 20%;
+    width: 90%;
+    /* letter-spacing: 10rem; */
+    /* font-size: 50%; */
+    
+}
+
+#icon1:hover{
+   /* background-color: red;                  this is my line ussed */
+}
+#icon2{                                         /* this is my line ussed*/
+   
+    font-size: 30px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 20%;
+    width: 90%;
+    background-color: pink;
+}
+
+                  /* button css ends*/

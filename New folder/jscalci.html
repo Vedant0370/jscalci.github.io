@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js calci page</title>
+    <link rel="stylesheet" href="./jscalcistyle.css">
+</head>
+<body>
+
+  
+      <div id="result">
+           
+        <!-- <form> -->
+
+          <!-- <input type="number"  placeholder="F" id="box1"> 
+
+          <input type="number"  placeholder="S" id="box2"><br><br>
+
+          <input type="text" placeholder="-ANS-" id="box3"> -->
+
+          <form  name="form1">
+
+
+            <input type="text" name="first" placeholder="F" id="box1">
+            
+            <input type="text" name="second" placeholder="S" id="box2"><br><br>
+
+            <input type="text" placeholder="ans" name="res" id="box3">
+    
+    
+            <!-- <button onclick="add()">ADD</button> -->
+            <!-- <button onclick="sub()">SUB</button> -->
+    
+            <ul>
+    
+            <li><a><input type="button" onclick="add()" id="icon1" value="+"></a></li>
+            <li><a><input type="button" onclick="sub()" id="icon2" value="-"></button></a></li>
+            <li><a><input type="button" onclick="mul()" id="icon2" value="x"></button></a></li>
+            <li><a><input type="button" onclick="div()" id="icon2" value="/"></button></a></li>
+            <!-- <li><a><button onclick="per()" id="icon2">/</button></a></li> -->
+    
+          </ul>
+          </div>
+    
+        </form>
+
+
+
+
+        <!-- </form> -->
+        
+        
+        
+        <script>
+
+         function add(){
+            
+                        
+             first = parseInt(form1.first.value); 
+             second =  parseInt( form1.second.value);
+             res = first + second;
+          //  alert(parseInt(num1) + parseInt(num2));
+           form1.res.value=res;
+
+  }
+
+  
+          function sub(num1 , num2){
+                  
+            // var num1 =  document.forms["form1"]["num1"].value;
+            // var num2 =  document.forms["form1"]["num2"].value;
+            first = parseInt(form1.first.value); 
+             second =  parseInt( form1.second.value);
+             res = first - second;
+         
+           form1.res.value=res;
+
+            //  alert(parseInt(num1) - parseInt(num2));
+  }
+
+  function mul(num1 , num2){
+            
+                        
+            // var num1 =  document.forms["form1"]["num1"].value;
+            // var num2 =  document.forms["form1"]["num2"].value;
+
+            first = parseInt(form1.first.value); 
+             second =  parseInt( form1.second.value);
+             res = first * second;
+         
+           form1.res.value=res;
+      
+          //  alert(parseInt(num1) * parseInt(num2));
+  }
+
+  function div(num1 , num2){
+            
+                        
+            // var num1 =  document.forms["form1"]["num1"].value;
+            // var num2 =  document.forms["form1"]["num2"].value;
+
+            first = parseInt(form1.first.value); 
+             second =  parseInt( form1.second.value);
+             res = first / second;
+
+           form1.res.value=res;
+      
+          //  alert(parseInt(num1) / parseInt(num2));
+  }
+
+
+          
+         
+
+
+        </script> 
+</body>
+</html>
